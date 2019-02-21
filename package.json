@@ -1,0 +1,40 @@
+{
+  "name": "advanced_react_node_project",
+  "version": "1.0.0",
+  "description": "Node with express and react create app.",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "jest --detectOpenHandles"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./tests/setup.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "passport",
+    "react",
+    "redis",
+    "testing"
+  ],
+  "author": "Pawel Targosz <pmtargosz@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.4",
+    "helmet": "^3.15.1",
+    "jest": "^23.6.0",
+    "mongoose": "^5.4.13",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
+    "puppeteer": "^1.12.2",
+    "redis": "^2.8.0"
+  }
+}
