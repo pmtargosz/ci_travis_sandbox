@@ -3,8 +3,9 @@
 # dependencies
 /node_modules
 node_modules/
-/config.js
-config.js
+# /config.js
+env_config.js
+/env_config.js
 
 /.pnp
 .pnp.js
